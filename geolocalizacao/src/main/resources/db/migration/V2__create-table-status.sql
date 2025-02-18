@@ -1,0 +1,9 @@
+-- Tabela de Status
+CREATE TABLE TbStatus (
+    idStatus INT AUTO_INCREMENT PRIMARY KEY,
+    nomeStatus VARCHAR(255) NOT NULL,
+    descricaoStatus TEXT,
+    dataHourCreated DATETIME DEFAULT CURRENT_TIMESTAMP,
+    dataHourChanged DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    dataHourDeleted DATETIME
+);
